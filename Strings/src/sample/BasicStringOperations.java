@@ -61,6 +61,9 @@ public class BasicStringOperations {
 		String word = "   bindu123   ";
 		String trimmedWord = word.trim(); // remove leading and trailing spaces
 		System.out.println("After trim(): " + trimmedWord);
+
+// StringBuilder: mutable class that allows you to modify the same object instead of creating new one everytime.
+// StringBuffer: similar to StringBuilder,but is thread safe,meaning it's safe to use in multi - threaded environment, but slower.
 	}
 
 }
