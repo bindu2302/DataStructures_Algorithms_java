@@ -64,6 +64,24 @@ public class BasicStringOperations {
 
 // StringBuilder: mutable class that allows you to modify the same object instead of creating new one everytime.
 // StringBuffer: similar to StringBuilder,but is thread safe,meaning it's safe to use in multi - threaded environment, but slower.
+
+		
+		StringBuilder sb = new StringBuilder("Hello");
+	        sb.append(" World");
+	        System.out.println(sb);
+	        
+	        StringBuffer sb1 = new StringBuffer("Hello");
+	        sb1.append(" World");
+	        System.out.println(sb1);  // Output: Hello World
+	        
+	        
+	        Scanner sc = new Scanner(System.in);
+	        
+	        String input = sc.nextLine();
+	        String ch = sc.next(); 
+	        int index = input.indexOf(ch);
+	        
+	        System.out.println("Index of " + input + " is: " + index);
 	}
 
 }
