@@ -18,7 +18,7 @@ public class StringbufferProgram {
 
 }
 
-
+// Common methods in String builder and String buffer
 
 package sample;
 
