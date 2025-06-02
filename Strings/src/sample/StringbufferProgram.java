@@ -17,3 +17,32 @@ public class StringbufferProgram {
 	}
 
 }
+
+
+
+package sample;
+
+import java.util.Scanner;
+
+public class Stringbuffer_StringBuilder {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		StringBuilder builder = new StringBuilder("Hello");
+		
+		builder.append("World!");
+		System.out.println(builder); // HelloWorld!
+
+		builder.insert(5,",world");  
+		System.out.println(builder); // Hello,world
+		
+		builder.reverse();
+		System.out.println(builder); //olleH
+
+
+		builder.delete(0,11);
+		System.out.println(builder); // delete all nothing will be printed
+	}
+
+}
+
