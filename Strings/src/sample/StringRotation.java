@@ -20,10 +20,28 @@ public class StringRotation {
 	}
 	
 	public static boolean rotateString(String str1, String str2) {
-		if(str1.length() == str2.length() && str1.length()>0) {
-			String combined = str1 + str1;
-		    return combined.contains(str2);
+		if(str1.length() != str2.length()) {
+			return false;
 		}
-		return false;
+		String combined = str1 + str1;
+		return combined.contains(str2);
 	}
 }
+
+//Enter a string1: 
+//HelloWorld
+//Enter a string2: 
+//WorldHello
+//The string 'WorldHello' is a rotation of 'HelloWorld'.
+
+//Enter a string1: 
+//abcde
+//Enter a string2: 
+//deabc
+//The string 'deabc' is a rotation of 'abcde'.
+
+//Enter a string1: 
+//hibindu
+//Enter a string2: 
+//hihima
+//The string 'hihima' is NOT a rotation of 'hibindu'.
