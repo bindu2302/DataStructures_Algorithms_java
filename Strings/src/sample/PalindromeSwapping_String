@@ -1,1 +1,44 @@
+package sample;
+
+import java.util.Scanner;
+
+public class PalindromeSwapping_String {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		
+		if(canFormPalindrome(str)) {
+			System.out.println("The string '" + str + "' can be rearranging to form a palindrome.");
+		} else {
+			System.out.println("The string '" + str + "' cannot be rearranging to form a palindrome.");
+		}
+	}
+	
+	public static boolean canFormPalindrome(String str) {
+		int[] charCount = new int[128];
+		
+		for(char c : str.toCharArray()) {
+			charCount[c]++;
+		}
+		
+		int oddCount = 0;
+		for(int count: charCount) {
+			if(count%2 != 0) {
+				oddCount++;
+			}
+		}
+		return oddCount <= 1;
+	}
+}
+
+
+//ivicc
+//The string 'ivicc' can be rearranging to form a palindrome.
+
+//civic
+//The string 'civic' can be rearranging to form a palindrome.
+
+//bindu
+//The string 'bindu' cannot be rearranging to form a palindrome.
 
