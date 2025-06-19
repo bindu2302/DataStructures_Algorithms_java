@@ -70,3 +70,9 @@ public class TripleStringTransformation {
     }
     
 }
+
+// Output: 
+//apple
+//bread
+//orange
+//%ppl%##ea#ORANGE
