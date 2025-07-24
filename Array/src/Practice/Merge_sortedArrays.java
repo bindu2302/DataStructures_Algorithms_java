@@ -48,3 +48,9 @@ public class Merge_sortedArrays {
 		}
 	}
 }
+
+output:
+3 3
+1 2 3
+2 5 6
+[1, 2, 2, 3, 5, 6]
